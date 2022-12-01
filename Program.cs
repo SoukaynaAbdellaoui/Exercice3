@@ -75,6 +75,23 @@ namespace Exercice3
             p.y = p.y + pasy;
 
         }
+  
+    }
+     static void Main(string[] args)
+    {
+        Point P = new Point();
+        Action<string> msgr = s => Console.WriteLine(s);
+        Action<string> msg = s => Console.Write(s);
+        //-------------------------------------------------
+        Console.WriteLine("Calcul de la distance d'un point dans le plan :");
+        Console.WriteLine("Entrez l'abscisse (x) du point: "); P.setx(int.Parse(Console.ReadLine()));
+        Console.WriteLine("Entrez l'ordonnée (y) du point: "); P.sety(int.Parse(Console.ReadLine()));
+        Console.WriteLine("La distance du point est: " + P.Distance());
+
+        Console.ReadKey();
     }
 }
+
+   
+
 
